@@ -34,7 +34,10 @@ git config --global user.email john@example.com
 
 ```bash
 git add .
+# 将当前文件夹所有的文件添加到暂存区
+
 git add <filename>
+# 添加指定的文件到暂存区
 
 # demo
 # git add README.md
@@ -47,4 +50,27 @@ git add <filename>
 ```bash
 git status
 
+git status -s #简洁的查看
 ```
+
+## git diff
+
+查看当前修改的文件和原文件的区别
+
+```
+git diff
+```
+
+## git commit
+
+## git remote
+
+连接远程仓库，假如我们不是从远程 clone 了一个仓库到本地，而是直接从本地新建了一个仓库的话，那我们想要将代码推送到远程仓库，我们就需要连接到远程仓库。
+
+```
+git remote add origin <server>
+
+# origin 是一个别名叫什么都可以，add 相当于给这个远程仓库添加一个叫origin的别名，方便后续的push
+```
+
+##
