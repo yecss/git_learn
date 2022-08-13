@@ -39,3 +39,12 @@ git add <filename>
 # demo
 # git add README.md
 ```
+
+## git status
+
+查看当前文件的状态，可以看出哪些文件修改了，哪些文件处于暂存区。方便我们的操作。
+
+```bash
+git status
+
+```
