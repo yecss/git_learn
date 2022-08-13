@@ -63,6 +63,14 @@ git diff
 
 ## git commit
 
+将暂存区的文件真正的提交到仓库中
+
+```
+git commit -m "本次提交信息"
+
+# 在开发时，良好的习惯是根据工作进度及时 commit，并务必注意附上有意义的 commit message。创建完项目目录后，第一次提交的 commit message 一般为「Initial commit.」。
+```
+
 ## git remote
 
 连接远程仓库，假如我们不是从远程 clone 了一个仓库到本地，而是直接从本地新建了一个仓库的话，那我们想要将代码推送到远程仓库，我们就需要连接到远程仓库。
@@ -73,4 +81,12 @@ git remote add origin <server>
 # origin 是一个别名叫什么都可以，add 相当于给这个远程仓库添加一个叫origin的别名，方便后续的push
 ```
 
-##
+## git clone
+
+将一个远程仓库克隆到本地上
+
+```
+git clone https://github.com/yecss/git_learn.git
+
+# clone的地址获取：点击 github项目的Code按钮，即可看到了。
+```
