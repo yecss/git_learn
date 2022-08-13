@@ -57,7 +57,7 @@ git status -s #简洁的查看
 
 查看当前修改的文件和原文件的区别
 
-```
+```bash
 git diff
 ```
 
@@ -68,14 +68,16 @@ git diff
 ```
 git commit -m "本次提交信息"
 
-# 在开发时，良好的习惯是根据工作进度及时 commit，并务必注意附上有意义的 commit message。创建完项目目录后，第一次提交的 commit message 一般为「Initial commit.」。
+# 在开发时，良好的习惯是根据工作进度及时 commit
+# 并务必注意附上有意义的 commit message。创建完项目目录后
+# 第一次提交的 commit message 一般为「Initial commit.」。
 ```
 
 ## git remote
 
 连接远程仓库，假如我们不是从远程 clone 了一个仓库到本地，而是直接从本地新建了一个仓库的话，那我们想要将代码推送到远程仓库，我们就需要连接到远程仓库。
 
-```
+```bash
 git remote add origin <server>
 
 # origin 是一个别名叫什么都可以，add 相当于给这个远程仓库添加一个叫origin的别名，方便后续的push
@@ -85,8 +87,34 @@ git remote add origin <server>
 
 将一个远程仓库克隆到本地上
 
-```
+```bash
 git clone https://github.com/yecss/git_learn.git
 
 # clone的地址获取：点击 github项目的Code按钮，即可看到了。
+```
+
+## git log
+
+查看当前项目 git 操作的历史记录
+
+```bash
+git log
+
+git log --graph #以图标形式查看
+```
+
+## git branch
+
+有关分支的一些操作
+
+```
+# 列举当前仓库的分支
+git branch
+
+# 新增分支
+git branch 分支名
+
+# 删除分支
+git branch -D 分支名
+
 ```
