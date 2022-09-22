@@ -1,5 +1,5 @@
 # 这可能是最简洁的 Git 教程
-
+[TOC]
 ## 前言
 
 git 是一个分布式的项目管理工具，和其他的管理工具不同。他是分布式的。
@@ -20,7 +20,7 @@ git 是一个分布式的项目管理工具，和其他的管理工具不同。�
 
 3、安装完成之后，打开 git 配置一些基本的用户信息,如邮箱，用户名。
 
-```
+```bash
 git config --global user.name "John Smith"
 
 git config --global user.email john@example.com
@@ -107,7 +107,7 @@ git log --graph #以图标形式查看
 
 有关分支的一些操作
 
-```
+```bash
 # 列举当前仓库的分支
 git branch
 
@@ -117,4 +117,17 @@ git branch 分支名
 # 删除分支
 git branch -D 分支名
 
+```
+## 设置代理
+
+```bash
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+# 将后面的端口号也就是1080修改为自己的代理软件的端口
+```
+
+## 清除代理
+```bash
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 ```
